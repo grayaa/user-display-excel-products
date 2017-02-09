@@ -8,12 +8,6 @@
 * Author URI: http://hammed-grayaa.tn
 */
 
-/**
- * Add new fields above 'Update' button.In User Profile
- *
- * @param WP_User $user User object.
- */
-
 
 
 /**
@@ -33,6 +27,12 @@ add_action( 'wp_enqueue_scripts', 'GH_add_front_styles' );
 function GH_add_front_styles() {
     wp_enqueue_style( 'user_products_table_front_style', plugins_url( '/css/style.css', __FILE__ ) );
 }
+
+/**
+ * Add new fields above 'Update' button.In User Profile
+ *
+ * @param WP_User $user User object.
+ */
 
 function tm_additional_profile_fields( $user ) {
 
@@ -172,6 +172,10 @@ function GH_save_extra_user_fields( $user_id ) {
 }
 
 
+
+/**
+* Used to display excel products for authorised user in the front end
+*/
 function GH_display_authorised_products($user){
 	//  Include PHPExcel_IOFactory
   include plugin_dir_path( __FILE__ ) .'excelscript/Classes/PHPExcel/IOFactory.php';
