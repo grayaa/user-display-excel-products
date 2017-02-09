@@ -1,0 +1,21 @@
+table#user_products_table {
+    background: #ffffff;
+    border: 5px solid #2f51b2;
+    width:100%;
+}
+table#user_products_table tr:nth-child(odd) {
+   background-color: #ccc;
+}
+table#user_products_table tr th {
+  padding-left: 12px;
+  background: #2f51b2;
+  color: #fff;
+}
+.client-products{
+  margin-top:20px;
+  background:#fff;
+  padding-bottom:30px;
+}
+.client-products p{
+  text-align:center;
+}

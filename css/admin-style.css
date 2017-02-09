@@ -1,0 +1,21 @@
+table#user_products_table {
+  background: #ffffff;
+  border: 5px solid #23282d;
+  width: 100%;
+  border-spacing: 0;
+}
+table#user_products_table tr:nth-child(odd) {
+  background-color: #ccc;
+}
+table#user_products_table tr th {
+  padding-left: 12px;
+  background: #23282d;
+  color: #fff;
+}
+.client-slider {
+  margin-top: 20px;
+}
+table#user_products_table tr:hover {
+  background: #23282d;
+  color: white;
+}
